@@ -1,0 +1,20 @@
+.recipe-display {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates two columns of equal width */
+    grid-template-rows: auto auto; /* Creates two rows */
+    gap: 20px; /* Adjusts the gap between grid items */
+    justify-items: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+}
+
+article {
+    width: 60%; /* Adjust the width of articles to fit two in a row */
+    border: 2px solid #8a4b08;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
