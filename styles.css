@@ -181,6 +181,7 @@ img {
 .page-heading {
     /* width: 700px; */
     margin-bottom: 15px;
+    margin-top: 5px;
 }
 
 .page-grid {
@@ -189,14 +190,34 @@ img {
     gap: 20px;
 }
 
+.paragraph-container {
+    text-align: justify;
+    /* Keeps line breaks and wraps text */
+    /* white-space: pre-wrap; */
+    /* Breaks words to prevent overflow */ 
+    word-break: normal;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .card p:nth-child(2) {
     margin-top: 50px;
     font-weight: bold;
 }
 /* Card Classes */
 .card {
-    background: #fff;
+    background: #0e0d0d13;
     color: #000;
     border-radius: 10px;
     padding: 20px;
+}
+
+.card-inside {
+    background: #18050509;
+    color: #000;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
