@@ -201,7 +201,7 @@ myheader_template.innerHTML = `
                     <li><a href="/main.html">Story</a></li>
                     <li><a href="/main.html">Project</a></li>
                     <li><a href="/main.html">Activity</a></li>
-                    <li><a href="/main.html">Contact</a></li>
+                    <li><a href="/assets/header_html/contact_me.html">Contact</a></li>
                 </ul>
             </div>
 
@@ -218,7 +218,7 @@ myheader_template.innerHTML = `
                     <li><a href="/story.html">Story</a></li>
                     <li><a href="/project.html">Project</a></li>
                     <li><a href="/activity.html">Project</a></li>
-                    <li><a href="/contact_me.html">Contact</a></li>
+                    <li><a href="/assets/header_html/contact_me.html">Contact</a></li>
                 </ul>
             </div>
 
