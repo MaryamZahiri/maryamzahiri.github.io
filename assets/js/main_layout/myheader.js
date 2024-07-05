@@ -198,7 +198,7 @@ myheader_template.innerHTML = `
                     <li><a href="/main.html">Home</a></li>
                     <li><a href="/assets/header_html/about_me.html">About Me</a></li>
                     <li><a href="/assets/header_html/background.html">Background</a></li>
-                    <li><a href="/assets/header_html/projects.html">Project</a></li>
+                    <li><a href="/assets/header_html/portfolio.html">Portfolio</a></li>
                     <li><a href="/assets/header_html/activity.html">Activity</a></li>
                     <li><a href="/assets/header_html/contact_me.html">Contact</a></li>
                 </ul>
@@ -214,7 +214,7 @@ myheader_template.innerHTML = `
                     <li><a href="/main.html">Home</a></li>
                     <li><a href="/assets/header_html/about_me.html">About Me</a></li>
                     <li><a href="/assets/header_html/background.html">Background</a></li>
-                    <li><a href="/assets/header_html/projects.html">Project</a></li>
+                    <li><a href="/assets/header_html/portfolio.html">Portfolio</a></li>
                     <li><a href="/assets/header_html/activity.html">Activity</a></li>
                     <li><a href="/assets/header_html/contact_me.html">Contact</a></li>
                 </ul>

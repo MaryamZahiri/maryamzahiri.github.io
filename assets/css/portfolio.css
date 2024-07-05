@@ -1,0 +1,42 @@
+.portfolio-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates two columns of equal width */
+    grid-template-rows: auto auto; /* Creates two rows */
+    gap: 20px; /* Adjusts the gap between grid items */
+    justify-items: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+}
+
+.portfolio {
+    position: relative;
+    overflow: hidden;
+    width: 80%; /* Adjust the width of portfolio to fit two in a row */
+    height: 80%;
+    border: 2px solid #000;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.portfolio p {
+    position: absolute;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: Adds a semi-transparent background */
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+    color: #000;
+}
+
+.portfolio img {
+    max-width: 100%; 
+    width: 100%;
+    border-radius: 10px 10px 10px 10px; /* Add border radius to top corners */
+    object-fit: cover;
+}
