@@ -40,3 +40,23 @@
     border-radius: 10px 10px 10px 10px; /* Add border radius to top corners */
     object-fit: cover;
 }
+
+/* Sick Hack Portfolio */
+.video {
+    /* Subtract the height of the footer to make space for it */
+    padding-bottom: 100px; /* Adjust according to the footer height */
+    box-sizing: border-box;
+    overflow: auto; /* Enable scrolling if content overflows */
+}
+
+.video .video-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.video .video-preview {
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 1000px;
+}
