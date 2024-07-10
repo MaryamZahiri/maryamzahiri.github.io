@@ -42,17 +42,27 @@
 }
 
 /* Medical */
-.portfolio-result {
+.portfolio-section-med {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Creates two columns of equal width */
+    grid-template-rows: auto auto; /* Creates two rows */
+    gap: 20px; /* Adjusts the gap between grid items */
+    justify-items: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+}
+
+.portfolio-result-med {
     /* display: flex; */
     justify-items: center;
     align-items: center;
-    margin-left: 30%;
+    /* margin-left: 30%; */
 }
 
-.portfolio-result img {
+.portfolio-section-med .portfolio-result-med img {
     border-radius: 10px 10px 10px 10px;
-    width: 60%;
-    height: auto;
+    height: 250px;;
+    /* width: 60%; */
+    /* height: auto; */
     justify-content: center;
     align-items: center;
     /* object-fit: contain; */
@@ -63,6 +73,7 @@
     /* border: 10px solid #000; */
     margin-top: 50px;
 }
+
 
 /* Sick Hack Portfolio */
 .video {
@@ -84,3 +95,24 @@
     width: 700px;
 }
 
+.portfolio-result {
+    /* display: flex; */
+    justify-items: center;
+    align-items: center;
+    margin-left: 30%;
+}
+
+.portfolio-result img {
+    border-radius: 10px 10px 10px 10px;
+    width: 60%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    /* object-fit: contain; */
+    /* border: 10px solid #000; */
+}
+
+.result {
+    /* border: 10px solid #000; */
+    margin-top: 50px;
+}
