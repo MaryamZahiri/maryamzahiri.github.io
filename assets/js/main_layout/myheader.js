@@ -195,7 +195,7 @@ myheader_template.innerHTML = `
             </div> -->
             <div class="main-menu">
                 <ul class="tab-header">
-                    <li><a href="/main.html">Home</a></li>
+                    <li><a href="/index.html">Home</a></li>
                     <li><a href="/assets/header_html/about_me.html">About Me</a></li>
                     <li><a href="/assets/header_html/background.html">Background</a></li>
                     <li><a href="/assets/header_html/portfolio.html">Portfolio</a></li>
@@ -211,7 +211,7 @@ myheader_template.innerHTML = `
             </div>
             <div class="mobile-menu">
                 <ul class="tab-header">
-                    <li><a href="/main.html">Home</a></li>
+                    <li><a href="/index.html">Home</a></li>
                     <li><a href="/assets/header_html/about_me.html">About Me</a></li>
                     <li><a href="/assets/header_html/background.html">Background</a></li>
                     <li><a href="/assets/header_html/portfolio.html">Portfolio</a></li>

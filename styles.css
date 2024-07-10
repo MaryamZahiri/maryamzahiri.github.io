@@ -207,14 +207,14 @@ img {
 }
 /* Card Classes */
 .card {
-    background: #0e0d0d13;
+    /* background: #0e0d0d13; */
     color: #000;
     border-radius: 10px;
     padding: 20px;
 }
 
 .card-inside {
-    background: #18050509;
+    /* background: #18050509; */
     color: #000;
     border-radius: 10px;
     padding: 10px;

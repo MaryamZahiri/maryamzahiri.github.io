@@ -41,22 +41,46 @@
     object-fit: cover;
 }
 
-/* Sick Hack Portfolio */
-.video {
-    /* Subtract the height of the footer to make space for it */
-    padding-bottom: 100px; /* Adjust according to the footer height */
-    box-sizing: border-box;
-    overflow: auto; /* Enable scrolling if content overflows */
+/* Medical */
+.portfolio-result {
+    /* display: flex; */
+    justify-items: center;
+    align-items: center;
+    margin-left: 30%;
 }
 
-.video .video-content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 0 15px;
+.portfolio-result img {
+    border-radius: 10px 10px 10px 10px;
+    width: 60%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    /* object-fit: contain; */
+    /* border: 10px solid #000; */
+}
+
+.result {
+    /* border: 10px solid #000; */
+    margin-top: 50px;
+}
+
+/* Sick Hack Portfolio */
+.video {
+    display: flex;
+    /* Subtract the height of the footer to make space for it */
+    /* Adjust according to the footer height */
+    /* padding-bottom: 100px;  */
+    box-sizing: border-box;
+    overflow: auto; /* Enable scrolling if content overflows */
+    /* border: 1px solid #000; */
 }
 
 .video .video-preview {
+    margin-left: 18%;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 20px;
     border-radius: 5px;
-    width: 1000px;
+    width: 700px;
 }
+
