@@ -1,0 +1,32 @@
+.description-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates two columns of equal width */
+    grid-template-rows: auto auto; /* Creates two rows */
+    /* Adjusts the gap between grid items */
+    /* gap: 1px;  */
+    justify-items: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+}
+
+.description {
+    /* position: relative; */
+    overflow: hidden;
+    width: 90%; /* Adjust the width of description to fit two in a row */
+    height: 90%;
+    /* border: 2px solid #000; */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.portfolio img {
+    max-width: 100%; 
+    width: 100%;
+    /* Add border radius to top corners */
+    border-radius: 10px 10px 10px 10px; 
+    object-fit: cover;
+}

@@ -8,7 +8,7 @@ myheader_template.innerHTML = `
     <!-- Icons -->
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <!-- Window tab icon -->
-    <link rel="icon" href="assets/images/webicon.png" type="images/x-icon">
+    <link rel="icon" href="/../assets/images/webicon.png" type="images/x-icon">
     
     <style>
         * {
@@ -195,8 +195,8 @@ myheader_template.innerHTML = `
             </div> -->
             <div class="main-menu">
                 <ul class="tab-header">
-                    <!-- <li><a href="/index.html">Home</a></li> -->
-                    <li><a href="/index.html">About Me</a></li>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/assets/header_html/about_me.html">About Me</a></li>
                     <!-- <li><a href="/assets/header_html/background.html">Background</a></li> -->
                     <li><a href="/assets/header_html/portfolio.html">Portfolio</a></li>
                     <li><a href="/assets/header_html/activity.html">Story</a></li>
@@ -211,8 +211,8 @@ myheader_template.innerHTML = `
             </div>
             <div class="mobile-menu">
                 <ul class="tab-header">
-                    <!-- <li><a href="/index.html">Home</a></li> -->
-                    <li><a href="/index.html">About Me</a></li>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/assets/header_html/about_me.html">About Me</a></li>
                     <!-- <li><a href="/assets/header_html/background.html">Background</a></li> -->
                     <li><a href="/assets/header_html/portfolio.html">Portfolio</a></li>
                     <li><a href="/assets/header_html/activity.html">Story</a></li>
