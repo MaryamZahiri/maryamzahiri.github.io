@@ -30,3 +30,14 @@
     border-radius: 10px 10px 10px 10px; 
     object-fit: cover;
 }
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .description-section {
+        grid-template-columns: 1fr; /* Adjusts to one column layout for smaller screens */
+    }
+    
+    .description-section > :nth-child(2) {
+        grid-column: 1 / span 2; /* Makes the second child span both columns */
+    }
+}

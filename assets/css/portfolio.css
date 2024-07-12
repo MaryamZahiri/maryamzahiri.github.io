@@ -2,7 +2,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Creates two columns of equal width */
     grid-template-rows: auto auto; /* Creates two rows */
-    gap: 20px; /* Adjusts the gap between grid items */
+    /* Adjusts the gap between grid items */
+    /* gap: 20px;  */
     justify-items: center; /* Centers items horizontally */
     align-items: center; /* Centers items vertically */
 }
@@ -74,6 +75,12 @@
     margin-top: 50px;
 }
 
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .portfolio-section {
+        grid-template-columns: 1fr; /* Adjusts to one column layout for smaller screens */
+    }
+}
 
 /* Sick Hack Portfolio */
 .video {
