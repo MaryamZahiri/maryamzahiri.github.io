@@ -3,7 +3,7 @@
     grid-template-columns: repeat(2, 1fr); /* Creates two columns of equal width */
     grid-template-rows: auto auto; /* Creates two rows */
     /* Adjusts the gap between grid items */
-    /* gap: 20px;  */
+    gap: 20px; 
     justify-items: center; /* Centers items horizontally */
     align-items: center; /* Centers items vertically */
 }
@@ -11,9 +11,9 @@
 .portfolio {
     position: relative;
     overflow: hidden;
-    width: 80%; /* Adjust the width of portfolio to fit two in a row */
-    height: 80%;
-    border: 2px solid #000;
+    width: 95%; /* Adjust the width of portfolio to fit two in a row */
+    height: 95%;
+    border: 2px solid #0000000e;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -40,6 +40,34 @@
     width: 100%;
     border-radius: 10px 10px 10px 10px; /* Add border radius to top corners */
     object-fit: cover;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .portfolio-section {
+        grid-template-columns: 1fr; /* Adjusts to one column layout for smaller screens */
+        gap: 1px; 
+    }
+
+    /* Smaller gap between consecutive even and odd children */
+    .portfolio-section > :nth-child(even):not(:last-child),
+    .portfolio-section > :nth-child(odd):not(:first-child) {
+        --gap-size: 10px; /* Smaller gap value */
+        margin-right: var(--gap-size);
+        margin-bottom: calc(var(--gap-size) * 2); /* Double the gap size for bottom margin */
+    }
+
+    /* Larger gap between odd child and the next even child */
+    .portfolio-section > :nth-child(odd):not(:last-child) ~ :nth-child(even) {
+        margin-top: calc(var(--gap-size) * 2 + 10px); /* Additional gap plus original gap size */
+    }
+
+    /* Reset margins for first and last children */
+    .portfolio-section > :first-child,
+    .portfolio-section > :last-child {
+        margin-right: 0;
+        margin-bottom: 0;
+    }
 }
 
 /* Medical */
@@ -75,12 +103,6 @@
     margin-top: 50px;
 }
 
-/* Responsive adjustments */
-@media (max-width: 767px) {
-    .portfolio-section {
-        grid-template-columns: 1fr; /* Adjusts to one column layout for smaller screens */
-    }
-}
 
 /* Sick Hack Portfolio */
 .video {
