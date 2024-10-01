@@ -133,7 +133,6 @@ myheader_template.innerHTML = `
         .mobile-menu {
             position: fixed;
             top: 0;
-            /* right: 0; */
             right: -300px;
             width: 250px;
             height: 100%;
@@ -141,10 +140,12 @@ myheader_template.innerHTML = `
             background: #fff;
             box-shadow: 0px 0px 10px rgb(0,0,0,0.2);
             transition: right 0.3s ease-in-out;
+            display: none;
         }
 
         .mobile-menu.active {
-            right: 0;
+            left: 0;
+            display: block;
         }
         .mobile-menu ul {
             margin-top: 30px;
@@ -152,7 +153,7 @@ myheader_template.innerHTML = `
         }
 
         .mobile-menu ul li {
-            margin: 10px 0;
+            margin: 10px 70px;
         }
 
         .mobile-menu ul li a {
@@ -235,6 +236,21 @@ class MyHeader extends HTMLElement {
 
         this.attachShadow({ mode: 'open'});
         this.shadowRoot.appendChild(myheader_template.content.cloneNode(true));
+        
+        // Initialize the mobile menu
+        const mobileMenu = this.shadowRoot.querySelector('.mobile-menu');
+        mobileMenu.classList.remove('active');
+        mobileMenu.style.display = 'none';
+
+        // Add event listener to the hamburger button
+        this.shadowRoot.querySelector('.hamburger-button')
+            .addEventListener('click', this.toggleBlockMods);
+
+        // Add event listener for window resize
+        window.addEventListener('resize', this.toggleMobileMenuVisibility);
+
+        // Call toggleMobileMenuVisibility to set initial state
+        this.toggleMobileMenuVisibility();
     }
 
     connectedCallback() {
@@ -255,21 +271,30 @@ class MyHeader extends HTMLElement {
 
     toggleBlockMods() {
         const mobileMenu = this.shadowRoot.querySelector('.mobile-menu');
-        if (mobileMenu.classList.contains('active')) {
-            mobileMenu.classList.remove('active');
-        } else {
-            mobileMenu.classList.add('active');
-        }
+        setTimeout(() => {
+            if (window.innerWidth <= 670) {
+                mobileMenu.classList.toggle('active');
+                mobileMenu.style.display = mobileMenu.classList.contains('active') ? 'block' : 'none';
+            } else {
+                mobileMenu.classList.remove('active');
+                mobileMenu.style.display = 'none';
+            }
+            console.log('After toggle: mobile menu classList:', mobileMenu.classList);
+            console.log('After toggle: mobile menu display:', mobileMenu.style.display);
+        }, 100);
+        // mobileMenu.classList.toggle('active');
+        // mobileMenu.style.display = mobileMenu.classList.contains('active') ? 'block' : 'none';
     }
 
     toggleMobileMenuVisibility() {
         const mobileMenu = this.shadowRoot.querySelector('.mobile-menu');
         if (window.innerWidth > 670) {
             mobileMenu.classList.remove('active');
+            mobileMenu.style.display = 'none';
         } 
-        // else {
-        //     mobileMenu.classList.add('active');
-        // }
+        else {
+            mobileMenu.classList.add('active');
+        }
     }
 
     updateView() {
