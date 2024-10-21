@@ -125,6 +125,19 @@
         margin-right: 0;
         margin-bottom: 0;
     }
+
+    /* video strikepack cm embedded software */
+    .cm_strikepack .video-container {
+        padding: 10px;
+    }
+
+    .cm_strikepack .video-preview {
+        width: 100%;
+        max-width: 400px; /* Adjust this value as needed */
+        height: auto;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
 }
 
 /* Medical */
