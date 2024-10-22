@@ -1,3 +1,9 @@
+- complete each section
+- add github to links
+- orgonize based on topic
+- add 2 arrow to right left
+- add more video to result
+- fixed mobile media menu click
 - add back button to portfolio
-- add gamepack mobile 
 - add videos/screen recording projects
+- add gamepack mobile 

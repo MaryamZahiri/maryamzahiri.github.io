@@ -64,7 +64,7 @@
     object-fit: cover;
 }
 
-.portfolio .read {
+/* .portfolio .read {
     background-color: #666;
     color: #fff;
     padding: 5px 10px;
@@ -76,7 +76,7 @@
 .portfolio .href:hover {
     background-color: #777;
     color: #000;
-}
+} */
 
 /* video */
 .cm_strikepack .video {
@@ -214,4 +214,18 @@
 .result {
     /* border: 10px solid #000; */
     margin-top: 50px;
+}
+
+.read {
+    background-color: #666;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.href:hover {
+    background-color: #777;
+    color: #000;
 }

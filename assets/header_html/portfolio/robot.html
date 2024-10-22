@@ -28,16 +28,136 @@
     <div class="dashboard-screen">
         <div class="dashboard-content container-shadow">
             <div class="portfolio-result">
-                <img src="https://github.com/MaryamZahiri/maryamzahiri.github.io/assets/52676399/e8ca1db5-0c30-4f9a-82ee-6139292daab5" alt="">
+                <img src="https://user-images.githubusercontent.com/52676399/96355606-45f9bc00-1098-11eb-92c0-623207f442c6.gif" alt="">
             </div>
             <div class="card">
-                <h2 class="page-heading">About Project: </h2>
+                <h2 class="page-heading">About UBC: </h2>
                 <div class="paragraph-container">
                     <div class="card-inside">
-                        Development of Human-tracking Robot using the QR Code recognition in Linux environment on Intel NUC.  ROS-based processes for mobile robots (powerbot)
+                        The University of British Columbia (UBC) is consistently ranked as the second-best university in Canada and among the top 40 globally. Known for its world-class research, academic excellence, and stunning campuses in Vancouver and Okanagan, UBC attracts top talent and fosters innovation across various disciplines. It offers cutting-edge programs in fields such as engineering, robotics, and AI, with a strong emphasis on interdisciplinary research. UBC's vibrant academic environment, coupled with its global impact, makes it a prestigious institution for higher education and research excellence.
                     </div>
                 </div>
             </div>
+
+            <div class="card">
+                <h2 class="page-heading">Description What I did: </h2>
+                <div class="paragraph-container">
+                    <div class="card-inside">
+                        Development of Human-tracking Robot using the QR Code recognition in Linux environment on Intel NUC. ROS-based processes for mobile robots (powerbot) <br>
+                        One main issue in mobile robotics is the task of localization and navigation. A human-tracking capability for a Powerbot using the landmark as a
+                        position reference is proposed as one approach to this problem. The Powerbot can
+                        follow a person, an object or another robot as a leader. In this method, a QR code
+                        on the leader is determined by the Powerbot. The Powerbot with a mounted camera
+                        tracks the position and orientation of the leader’s QR code at high speed. There are
+                        three steps in the human-following process. First, a leader marked with a QR code
+                        is recognized. Second, location detection of the QR code applying a shape-based
+                        pattern matching algorithm recognizes the position of the QR code. Third, the
+                        Powerbot maintains a determined distance from the leader while following. The
+                        third step is a robot-control experiment to demonstrate the accuracy of the tracking
+                        algorithm.
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2 class="page-heading">Actions: </h2>
+                <div class="paragraph-container">
+                    <div class="card-inside">
+                        <strong>QR Code Detection: </strong>A mobile robot with a mounted camera uses a vision-based algorithm to detect and recognize QR codes. The QR code on a leader (a person or another robot) serves as a landmark for localization and navigation. <br>
+                        <strong>Location Detection: </strong>A shape-based pattern matching algorithm is applied to accurately determine the location of the QR code and, thus, the position of the leader. <br>
+                        <strong>Robot Control: </strong>The robot adjusts its speed and maintains a fixed distance from the leader, ensuring smooth tracking by following the QR code in real-time. <br>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="page-heading">Responsibilities: </h2>
+                <div class="paragraph-container">
+                    <div class="card-inside">
+                        <strong>Algorithm Development: </strong>Designed and implemented a high-accuracy vision system for QR code detection, focusing on fast recognition and robust navigation. <br>
+                        <strong>System Integration: </strong>Integrated the vision-based QR code tracking system with the robot control mechanism to ensure accurate localization. <br>
+                        <strong>Testing and Debugging: </strong>Conducted experiments to evaluate the performance of the human-following robot and fine-tuned the system for real-time functionality. 
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="page-heading">How: </h2>
+                <div class="paragraph-container">
+                    <div class="card-inside">
+                        <div class="container-small">
+                            <img src="https://github.com/MaryamZahiri/maryamzahiri.github.io/assets/52676399/e8ca1db5-0c30-4f9a-82ee-6139292daab5" alt=""> <br><br>
+                        </div>
+                        The QR code detection for a human-tracking robot was made using a combination of software technologies and a camera-based vision system using vision-visp. Here's a breakdown of how it worked: <br><br>
+
+                        <strong>Software and Technology Involved:</strong> <br>
+                        • Camera and Vision System: <br>
+                        The robot was equipped with a camera to capture real-time images. The QR code was used as a landmark for localization and navigation. <br>
+
+                        • Image Processing Algorithms: <br>
+
+                        A shape-based pattern matching algorithm was used to identify and detect the QR code in the captured images. <br>
+                        - The algorithm involved: <br>
+                        Converting the image to grayscale for better accuracy. <br>
+                        Edge detection and grid-cell generation to analyze the QR code's structure. <br>
+                        The QR code's position and orientation were determined based on its recognition in the image, allowing the robot to understand the leader’s location. <br>
+                        • Robot Operating System (ROS): <br>
+                        The robot control part was integrated into a ROS-based framework, ensuring that processes like localization, navigation, and movement control could be managed effectively. <br>
+
+                        • Control Algorithms: A control algorithm was implemented to maintain a specific distance from the leader (the human or object being tracked). It ensured that the robot followed the leader’s movements without deviating from the path. <br><br>
+                        
+                        <strong>How the Detection Worked: </strong><br>
+                        Step 1: The camera on the robot captures the image of the environment. <br>
+                        Step 2: The image is processed using pattern-matching techniques to detect the QR code in the frame. <br>
+                        Step 3: Once the QR code is identified, the algorithm calculates its position and orientation in the robot’s reference frame. <br>
+                        Step 4: The robot uses this information to adjust its movements, ensuring it follows the QR code (leader) while maintaining a set distance.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="page-heading">Goal: </h2>
+                <div class="paragraph-container">
+                    <div class="card-inside">
+                        QR code detection aimed to solve the problem of localization and navigation in mobile robotics, particularly in dynamic environments. By using QR code recognition, the robot can follow a leader in real-time, making the system suitable for applications requiring autonomous following, such as warehouse robots or service robots. The choice of QR codes allows for cost-effective and scalable solutions for localization.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="page-heading">Results: </h2>
+                <div class="paragraph-container">
+                    <div class="card-inside">
+                        <strong>Accurate Tracking: </strong>The robot successfully followed the leader using QR code detection, with high-speed recognition and precise distance maintenance. <br>
+                        <strong>Improved Localization: </strong>The use of QR codes enhanced the accuracy of localization and navigation, solving common issues related to non-homogeneous lighting and real-time movement. <br>
+                        <strong>Obstacle Avoidance: </strong>By integrating the system with ultrasonic sensors, the robot avoided obstacles, maintaining smooth tracking even in dynamic environments.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="page-heading">Skills: </h2>
+                <div class="paragraph-container">
+                    <div class="card-inside">
+                        C++, Python, ROS-based processes, computer-vision, CMake, Linux, SLAM for navigation Robots
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="page-heading">Find more on links: </h2>
+                <div class="paragraph-container">
+                    <div class="card-inside">
+                        <strong>Clink on Github: </strong> <br>
+                        <a href="https://github.com/MaryamZahiri/Robot-QR-code" title="visit https://github.com/MaryamZahiri/Robot-QR-code">Github</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="paragraph-container">
+                    <div class="card-inside">
+                        <a href="/assets/header_html/portfolio.html" title="Go to next page" class="read href">
+                            <strong>Back to portfolio</strong>
+                        </a><br>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 </body>
