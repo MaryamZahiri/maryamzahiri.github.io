@@ -1,6 +1,3 @@
-- change the font design
-- add linkedin
-- add blue color to links
 - orgonize based on topic
 - add 2 arrow to right left
 - add more video to result
@@ -13,3 +10,6 @@
 - add back button to portfolio
 - add github/skills to links, pros and cons
 - orgonize the sections
+- change the font design
+- add linkedin
+- add blue color to links

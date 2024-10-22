@@ -148,17 +148,26 @@ myheader_template.innerHTML = `
             display: block;
         }
         .mobile-menu ul {
+            text-align: left;
+            padding-left: 0;
             margin-top: 30px;
             padding-right: 10px;
         }
 
         .mobile-menu ul li {
+            justify-content: flex-start;
             margin: 10px 70px;
         }
 
         .mobile-menu ul li a {
+            text-align: left;
+            width: 100;
             font-size: 12px;
             transition: 0.3s;
+        }
+
+        .mobile-menu ul li:last-child {
+            margin-left: 60px; /* Ensure there's no extra left margin */
         }
 
         .hidden {
@@ -197,11 +206,11 @@ myheader_template.innerHTML = `
             <div class="main-menu">
                 <ul class="tab-header">
                     <li><a href="/index.html">Home</a></li>
+                    <li><a href="/assets/header_html/portfolio.html">Portfolio</a></li>
                     <li><a href="/assets/header_html/about_me.html">About Me</a></li>
                     <!-- <li><a href="/assets/header_html/background.html">Background</a></li> -->
-                    <li><a href="/assets/header_html/portfolio.html">Portfolio</a></li>
                     <li><a href="/assets/header_html/activity.html">Story</a></li>
-                    <!-- <li><a href="/assets/header_html/contact_me.html">Contact</a></li> -->
+                    <li><a href="/assets/header_html/contact_me.html">Contact</a></li>
                 </ul>
             </div>
 
@@ -213,11 +222,11 @@ myheader_template.innerHTML = `
             <div class="mobile-menu">
                 <ul class="tab-header">
                     <li><a href="/index.html">Home</a></li>
+                    <li><a href="/assets/header_html/portfolio.html">Portfolio</a></li>
                     <li><a href="/assets/header_html/about_me.html">About Me</a></li>
                     <!-- <li><a href="/assets/header_html/background.html">Background</a></li> -->
-                    <li><a href="/assets/header_html/portfolio.html">Portfolio</a></li>
                     <li><a href="/assets/header_html/activity.html">Story</a></li>
-                    <!-- <li><a href="/assets/header_html/contact_me.html">Contact</a></li> -->
+                    <li><a href="/assets/header_html/contact_me.html">Contact</a></li>
                 </ul>
             </div>
 
