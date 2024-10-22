@@ -27,53 +27,221 @@
     <!-- Main Screen -->
     <div class="dashboard-screen">
         <div class="dashboard-content container-shadow">
-            
             <div class="portfolio-result">
-                <img src="https://github.com/user-attachments/assets/b7ca070b-1612-4399-b056-24cd1b1bd163" alt="">
+                <img src="https://github.com/user-attachments/assets/d6d5ceec-8b88-4cee-a085-5357b687c010" alt="">
+            </div>
+            <div class="card">
+                <h1 class="page-heading">Computer Vision for Game Data Extraction and Automation: </h1>
+                <div class="paragraph-container">
+                    <div class="card-inside">
+                        I applied computer vision (CV) techniques such as shape detection and template matching to automate the extraction of game logic from video games like Street Fighter, Mortal Kombat, and NBA simulations. The purpose of this approach was to automate the detection of character movements and game actions, streamlining data collection and reducing the manual coding efforts required for game development. <br>
+
+                        In games like Street Fighter, there are 105 unique moves across 21 characters (each with an average of 5 moves). Manually coding these moves would take considerable time and effort. By using CV methods to parse this data from gameplay footage, I was able to convert images into structured strings of data, which could then be stored and parsed for future stages of game development. <br>
+                        
+                        This automation was particularly beneficial for my work on the Zen platform gamepack projects, where the only middleware section of a single game required over 12k lines of compiled code. Automating the detection of movements and interactions allowed me to significantly reduce the time spent manually writing code for complex game features. This also helped avoid errors that might have arisen from manually coding such extensive game logic. <br>
+                        
+                        By automating these tasks, I was able to efficiently prepare game features, with the result being a streamlined and less error-prone workflow. For instance, I used pretrained YOLO models to detect NBA shot meters, providing a reliable way to capture important in-game data without manual intervention. <br>
+                        
+                        Results: This automation led to faster development cycles, especially when dealing with gamepacks that required tens of thousands of lines of middleware code for a single game. <br>
+                        
+                        This approach demonstrates the advantages of automation in game development, particularly for large-scale projects where manual coding would be time-consuming and prone to human error.
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-result">
+                <img src="https://github.com/user-attachments/assets/352c79e5-1943-4ef1-b63e-7686b52c51ce" alt="">
             </div>
 
             <div class="card">
+                <h1 class="page-heading">Mortal Kombat Detection: </h1>
+            </div>
+            <div class="card">
+                <h2 class="page-heading">MK Description: </h2>
                 <div class="paragraph-container">
-                    <h2 class="page-heading">Mortal Kombat Detection: </h2>
                     <div class="card-inside">
-                        
+                        I developed a tool designed to analyze Mortal Kombat gameplay footage using computer vision (CV) techniques, such as template matching and image processing. The system extracts player moves from video frames and converts them into structured data, specifically character move strings, which can be used in game development pipelines.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="page-heading">MK Ations: </h2>
+                <div class="paragraph-container">
+                    <div class="card-inside">
+                        • Implemented video frame processing to analyze recorded gameplay. <br>
+                        • Applied custom masking and preprocessing techniques to isolate relevant screen areas (like controller buttons). <br>
+                        • Employed template matching to detect specific button presses in gameplay footage. <br>
+                        • Parsed the detected buttons into structured string formats for later analysis.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="page-heading">MK Responsibilities: </h2>
+                <div class="paragraph-container">
+                    <div class="card-inside">
+                        • Designing the frame processing and button detection system. <br>
+                        • Developing efficient preprocessing techniques to enhance accuracy across varying gameplay environments. <br>
+                        • Ensuring error handling and robustness during video analysis. <br>
+                        • Integrating multiple libraries (e.g., OpenCV) to automate gameplay data extraction.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="page-heading">How MK detection: </h2>
+                <div class="paragraph-container">
+                    <div class="card-inside">
+                        • Created a pipeline that processes video footage and extracts button presses through template matching. <br>
+                        • Applied masking and preprocessing techniques to filter out irrelevant information (e.g., unrelated parts of the screen). <br>
+                        • Parsed the button presses into a structured format for analysis and future game development steps.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="page-heading">MK Goal: </h2>
+                <div class="paragraph-container">
+                    <div class="card-inside">
+                        The primary purpose of this project was to automate the extraction of character movements from gameplay footage and convert them into string move sequences. This eliminated the need for manual input and helped streamline game feature development. The system ultimately compiled over 12k lines of code for the middleware section of a gamepack for Mortal Kombat, all derived from automated parsing, otherwise be a highly time-consuming manual process.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="page-heading">MK CV Pros: </h2>
+                <div class="paragraph-container">
+                    <div class="card-inside">
+                        • <strong>Time Efficiency: </strong>The automated system significantly reduced the time required to convert gameplay footage into usable data. <br>
+                        • <strong>Error Reduction: </strong>By automating input parsing, the project minimized the risk of human error during manual coding. <br>
+                        • <strong>Code Maintenance: </strong>The structured approach allowed for easier maintenance and reuse of the system for future projects, simplifying updates or adaptations for different games. 
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="page-heading">MK CV Cons: </h2>
+                <div class="paragraph-container">
+                    <div class="card-inside">
+                        • <strong>Compression and Space Issues: </strong>The game’s large file sizes posed a challenge, especially when working with the limited space of embedded systems. Compressing data using recursive algorithms in core library was time-consuming. <br>
+                        • <strong>Timing Sensitivity: </strong>Mortal Kombat requires precise timing, which posed challenges when handling the different timing requirements across various consoles. <br>
+                        • <strong>Data Transfer Latency: </strong>Some advanced challenges arose due to differences in data transfer speeds between the app and the Zen platform, which impacted the accuracy of input timings in fast-paced, competitive environments.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="page-heading">MK Result: </h2>
+                <div class="paragraph-container">
+                    <div class="card-inside">
+                        The project showcased the potential for automation in game development, particularly in reducing manual coding efforts and preventing errors. However, it also highlighted the need for further refinement in handling timing-sensitive gameplay for cross-platform applications. This approach underscores the advantages of automation in MK project where manual coding would be time-consuming and error-prone, particularly for large-scale projects.
                     </div>
                 </div>
             </div>
             
 
             <div class="portfolio-result">
-                <img src="https://github.com/user-attachments/assets/383c79de-67d6-4699-9b97-34b98aebf378" alt="">
+                <img src="https://github.com/user-attachments/assets/f47c22ab-4085-4990-93a7-0db72d160f4e" alt="">
             </div>
 
             <div class="card">
+                <h1 class="page-heading">Street Fighter Detection: </h1>
                 <div class="paragraph-container">
-                    <h2 class="page-heading">Street Fighter Detection: </h2>
                     <div class="card-inside">
-                        
+                        I developed a system to detect and process fighter inputs for Street Fighter games. The tool automates input detection and converts these inputs into a structured data format, optimizing the development process. The project relied on computer vision, template matching, and OCR techniques to extract button sequences and timing from the game footage.
                     </div>
                 </div>
             </div>
-
+            <div class="card">
+                <h2 class="page-heading">SF6 Description: </h2>
+                <div class="paragraph-container">
+                    <div class="card-inside">
+                        This system was built to automate the extraction of player inputs from recorded Street Fighter gameplay, leveraging template matching to detect button presses. The project faced several technical challenges, such as space limitations in the embedded system and the complexity of compressed data algorithms.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="page-heading">SF6 Actions: </h2>
+                <div class="paragraph-container">
+                    <div class="card-inside">
+                        • Developed a system to analyze frames from Street Fighter gameplay footage. <br>
+                        • Implemented a template matching technique for detecting and recognizing fighter input sequences. <br>
+                        • Used OCR via pytesseract to extract timing information from game interfaces. <br>
+                        • Created a custom file format to store parsed data for further analysis.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="page-heading">SF6 Responsibilities: </h2>
+                <div class="paragraph-container">
+                    <div class="card-inside">
+                        • Designing and implementing the input detection and timing association algorithms. <br>
+                        • Integrating various libraries (OpenCV, pytesseract) to handle game footage processing. <br>
+                        • Managing file operations to serialize the processed data and ensure system efficiency. <br>
+                        • Handling performance optimization in the compressed data system to meet embedded platform constraints.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="page-heading">How SF6 detection: </h2>
+                <div class="paragraph-container">
+                    <div class="card-inside">
+                        I designed an input detection system using template matching to identify fighter movements from gameplay footage. Each detected input was associated with its closest frame for precise timing analysis. To handle the compressed data, I created a recursive algorithm that reduced file sizes without losing essential game data. However, managing the transition between the Zen platform and the app required handling different speeds, which posed a significant challenge for accurate data processing.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="page-heading">SF6 Goal: </h2>
+                <div class="paragraph-container">
+                    <div class="card-inside">
+                        The primary goal was to automate the detection and extraction of fighter input combinations and timing information from Street Fighter gameplay footage. This saved developers from manually parsing moves and reduced errors in coding, enhancing overall development efficiency.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="page-heading">SF6 Pros: </h2>
+                <div class="paragraph-container">
+                    <div class="card-inside">
+                        • <strong>Time-Saving Automation: </strong>Reduced the need for manual input detection, accelerating the overall game development process. <br>
+                        • <strong>Error Prevention:</strong> The automated system minimized human error during data extraction and input coding. <br>
+                        • <strong>Maintainability: </strong>The structured file format made it easier to update and maintain for future games or versions.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="page-heading">SF6 Cons: </h2>
+                <div class="paragraph-container">
+                    <div class="card-inside">
+                        • <strong>Compression and Space Issues: </strong>The game’s large file sizes posed a challenge, especially when working with the limited space of embedded systems. Compressing data using recursive algorithms in core library was time-consuming. <br>
+                        • <strong>Timing Sensitivity: </strong>Discrepancies in data transfer speeds between the Zen platform and the app resulted in difficulties maintaining consistent timing across various systems.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <h2 class="page-heading">SF6 Result: </h2>
+                <div class="paragraph-container">
+                    <div class="card-inside">
+                        Despite the challenges, this project successfully demonstrated the benefits of automating the extraction of fighter moves for game development. It streamlined the data collection process and minimized coding errors, though it highlighted the complexity of handling timing across platforms. The project showcased the power of automation in game development, making it highly relevant for large-scale, input-heavy games.
+                    </div>
+                </div>
+            </div>
+            
 
             <div class="portfolio-result">
                 <img src="https://github.com/user-attachments/assets/d8cfe695-ed7b-4b34-8aeb-80cc03b78058" alt="">
             </div>  
 
             <div class="card">
+                <h1 class="page-heading">NBA Detection: </h1>
+            </div>
+            <div class="card">
+                <h2 class="page-heading">NBA Description: </h2>
                 <div class="paragraph-container">
-                    <h2 class="page-heading">NBA Detection Description: </h2>
                     <div class="card-inside">
-                        This project focused on implementing shot meter detection for a basketball game simulation using computer vision techniques. Leveraging a pre-trained YOLOv5 model, the system was designed to detect players and their shot meters in real time, improving gameplay interaction.
+                        This project focused on implementing shot meter detection for a basketball game simulation using computer vision techniques. Leveraging a pre-trained YOLOv8n model, the system was designed to detect players and their shot meters in real time, improving gameplay interaction.
                     </div>
                 </div>
             </div>
             <div class="card">
+                <h2 class="page-heading">NBA Actions: </h2>
                 <div class="paragraph-container">
-                    <h2 class="page-heading">NBA Detection Actions: </h2>
                     <div class="card-inside">
                         <strong>Player Detection: </strong><br>
-                        Utilized a pre-trained YOLOv5 model for detecting players in pre-recorded basketball gameplay footage. <br>
+                        Utilized a pre-trained YOLOv8n model for detecting players in pre-recorded basketball gameplay footage. <br>
 
                         <strong>Model Customization and Fine-Tuning:</strong> <br>
                         Customized the person detection model and player-specific datasets to improve detection accuracy for shot opportunities. <br>
@@ -85,18 +253,18 @@
             </div>
 
             <div class="card">
+                <h2 class="page-heading">NBA Responsibilities: </h2>
                 <div class="paragraph-container">
-                    <h2 class="page-heading">NBA Detection Responsibilities: </h2>
                     <div class="card-inside">
-                        • Player Detection: Focused on identifying players' positions to enhance shot meter detection. <br>
-                        • Model Customization: Tuned and optimized the pre-trained YOLO model for the specific task of detecting shot meters in gameplay simulations.<br>
+                        • <strong>Player Detection: </strong>Focused on identifying players' positions to enhance shot meter detection. <br>
+                        • <strong>Model Customization: </strong>Tuned and optimized the pre-trained YOLO model for the specific task of detecting shot meters in gameplay simulations.<br>
                         • Python coding to implement and integrate detection into the simulation environment.
                     </div>
                 </div>
             </div>
             <div class="card">
+                <h2 class="page-heading">How NBA Detection: </h2>
                 <div class="paragraph-container">
-                    <h2 class="page-heading">How NBA Detection: </h2>
                     <div class="card-inside">
                         <strong>Model Selection:</strong> <br>
                         I chose to use YOLO (You Only Look Once), specifically YOLOv8n, for object detection.
@@ -126,22 +294,30 @@
                 </div>
             </div>
             <div class="card">
+                <h2 class="page-heading">NBA Goal: </h2>
                 <div class="paragraph-container">
-                    <h2 class="page-heading">NBA Detection Goal: </h2>
                     <div class="card-inside">
                         This experiment aimed to explore how customized person detection could improve basketball simulations by analyzing player positioning and providing insights into the best moments for taking shots, ultimately enhancing the accuracy and interactivity of the simulation.
                     </div>
                 </div>
             </div>
             <div class="card">
+                <h2 class="page-heading">NBA Result: </h2>
                 <div class="paragraph-container">
-                    <h2 class="page-heading">NBA Detection Result: </h2>
                     <div class="card-inside">
                         Successfully developed a system that could detect players and shot meters in pre-recorded gameplay footage, helping to determine future optimal shot timing based on player positioning.
                     </div>
                 </div>
             </div>
-            
+
+            <div class="card">
+                <h2 class="page-heading">Skills: </h2>
+                <div class="paragraph-container">
+                    <div class="card-inside">
+                        Python, Computer Vision 
+                    </div>
+                </div>
+            </div>
             
             <div class="card">
                 <div class="paragraph-container">

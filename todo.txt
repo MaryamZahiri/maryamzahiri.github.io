@@ -1,9 +1,15 @@
-- complete each section
-- add github to links
+- change the font design
+- add linkedin
+- add blue color to links
 - orgonize based on topic
 - add 2 arrow to right left
 - add more video to result
-- fixed mobile media menu click
-- add back button to portfolio
+- add certificates to story
 - add videos/screen recording projects
+- fixed mobile media menu click!
+
 - add gamepack mobile 
+- complete each section
+- add back button to portfolio
+- add github/skills to links, pros and cons
+- orgonize the sections
