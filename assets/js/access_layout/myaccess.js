@@ -14,7 +14,7 @@ myaccess_template.innerHTML = `
         .navbar {
             padding: 20px;
             text-align: center;
-            background-color: #f4f4f4;
+            // background-color: #f4f4f4;
         }
 
         .container {
@@ -38,7 +38,8 @@ myaccess_template.innerHTML = `
 
     <div class="navbar">
         <div class="container">
-            <input type="password" id="password" placeholder="Password">
+            <!--<input type="password" id="password" placeholder="Password">-->
+            <div type="password" id="password" placeholder="Password"></div>
             <button id="unlockBtn">Open Resume</button>
         </div>
     </div>
@@ -65,12 +66,13 @@ class MyAccess extends HTMLElement {
 
     unlockResume() {
         const password = this.shadowRoot.querySelector("#password").value;
-        if (password === "2025") {
-            // Adjust the path to mz.pdf based on your folder structure
-            window.open("../js/access_layout/mz.pdf", "_blank");  // Use "../" to go up one folder level from header_html
-        } else {
-            alert("Incorrect password.");
-        }
+        window.open("../js/access_layout/mz.pdf", "_blank"); 
+        // if (password === "") {
+        //     // Adjust the path to mz.pdf based on your folder structure
+        //     window.open("../js/access_layout/mz.pdf", "_blank");  
+        // } else {
+        //     alert("Incorrect password.");
+        // }
     }
 }
 
